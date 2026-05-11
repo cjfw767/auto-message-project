@@ -158,7 +158,7 @@ msg = f"""<strong>식봄 CJFW GMV</strong><br><br>
 
 teams_webhook_url = os.getenv(
     "TEAMS_WEBHOOK_URL",
-    "https://defaultee6af5c5684f45399eb664793af080.27.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/7ae3d6962bb748b895ce7e12add838e2/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=tAPK4px0sgQ7twoNwE8ZCDDhRmWja0R1tUkfw8Fj_aQ",
+    "https://defaultee6af5c5684f45399eb664793af080.27.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/ae827a2b1ad74d5293391d5958cb63ab/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=MEAG7h-Yysn2OBzQFWCnnfFjEEORmK7sedaHG84AgjU",
 )
 
 try:
