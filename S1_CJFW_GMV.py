@@ -137,12 +137,3 @@ for account_name in df["Account"].unique():
         print(f"저장 실패 : {account_name} / 오류 : {e}")
 
 print("전체 작업 완료!")
-
-
-{
-  "CENTRAL": "qhdwns123",
-  "WEST": "qhdwns123",
-  "EAST": "qhdwns123"
-}
-
-ewogICJDRU5UUkFMIjogInFoZHduczEyMyIsCiAgIldFU1QiOiAicWhkd25zMTIzIiwKICAiRUFTVCI6ICJxaGR3bnMxMjMiCn0=
