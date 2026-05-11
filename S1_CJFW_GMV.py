@@ -35,7 +35,8 @@ scope = [
 creds = ServiceAccountCredentials.from_json_keyfile_name(gs_json_path, scope)
 gc = gspread.authorize(creds)
 
-spreadsheet_url = "https://docs.google.com/spreadsheets/d/1Rj05cusbuxkt1UTQXQgYIXVxncV-cT85zDIZrb7qYZw/edit"
+
+spreadsheet_url = "https://docs.google.com/spreadsheets/d/1ojlyIZbobA6BrmzQZYAG7orubQfE7hWyzAVBxRPM788/edit#gid=0"
 spreadsheet = gc.open_by_url(spreadsheet_url)
 
 # 식봄 판매자센터 접속
@@ -136,3 +137,12 @@ for account_name in df["Account"].unique():
         print(f"저장 실패 : {account_name} / 오류 : {e}")
 
 print("전체 작업 완료!")
+
+
+{
+  "CENTRAL": "qhdwns123",
+  "WEST": "qhdwns123",
+  "EAST": "qhdwns123"
+}
+
+ewogICJDRU5UUkFMIjogInFoZHduczEyMyIsCiAgIldFU1QiOiAicWhkd25zMTIzIiwKICAiRUFTVCI6ICJxaGR3bnMxMjMiCn0=

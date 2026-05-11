@@ -17,7 +17,7 @@ scope = [
 creds = Credentials.from_service_account_file(GS_JSON_PATH, scopes=scope)
 gc = gspread.authorize(creds)
 
-spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1Rj05cusbuxkt1UTQXQgYIXVxncV-cT85zDIZrb7qYZw")
+spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1ojlyIZbobA6BrmzQZYAG7orubQfE7hWyzAVBxRPM788/edit#gid=0")
 sheet_names = ["Central", "West", "East"]
 region_map = {"Central": "중부", "East": "동부", "West": "서부"}
 
@@ -130,7 +130,7 @@ summary_list.append(make_summary_row("당월합계", summary_list_this_month))
 summary_df = pd.DataFrame(summary_list)
 
 # 저장 : Google Spreadsheet
-result_spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1ojlyIZbobA6BrmzQZYAG7orubQfE7hWyzAVBxRPM788")
+result_spreadsheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1ojlyIZbobA6BrmzQZYAG7orubQfE7hWyzAVBxRPM788/edit#gid=0")
 try:
     ws = result_spreadsheet.worksheet("일별실적")
     ws.batch_clear(['A2:Z1000'])
